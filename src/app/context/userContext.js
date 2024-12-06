@@ -14,7 +14,7 @@ export const UserProvider = ({ children }) => {
     driverId: 1,
     type: 0,
     inspectorId: 1,
-    InspectionDetails: {
+    inspectionDetails: {
       pneus: false,
       rodas: false,
       freioDeMao: false,

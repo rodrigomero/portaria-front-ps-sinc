@@ -1,0 +1,282 @@
+/* styles/listagem.css */
+
+.listagem-container {
+  align-content: center;
+}
+
+thead tr th:first-child {
+  border-top-left-radius: 10px;
+}
+thead tr th:last-child {
+  border-top-right-radius: 10px;
+}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+tbody tr:last-child {
+  border-style: hidden;
+}
+thead tr {
+  border-style: hidden;
+}
+
+.listagem-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  background-color: #4d4d4d;
+  color: #333;
+  table-layout: auto;
+  border-radius: 8px;
+}
+
+.listagem-tabela th {
+  background-color: #4d4d4d;
+  color: #ffffff;
+  padding: 12px;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center;
+}
+
+.listagem-tabela td {
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  word-wrap: break-word;
+  white-space: nowrap;
+  text-align: center;
+  height: 45px;
+}
+
+.td-icon div {
+  display: flex;
+  justify-content: center;
+}
+
+.listagem-tabela tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+.listagem-tabela tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.listagem-tabela tr:hover {
+  background-color: #e2e8f0;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .listagem-tabela {
+    font-size: 14px;
+  }
+
+  .listagem-tabela th,
+  .listagem-tabela td {
+    padding: 8px;
+  }
+}
+
+.btn-abrir-modal {
+  padding: 0px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+}
+
+.btn-abrir-modal:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para o botão de fechar */
+.btn-fechar-modal {
+  margin-top: 0;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-fechar-modal:hover {
+  background-color: #d32f2f;
+}
+
+.btn-salvar {
+  padding: 10px 20px;
+  background-color: #02ca02;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-salvar:hover {
+  background-color: #009400;
+}
+
+/* Estilo para o botão de editar */
+.btn-editar {
+  padding: 5px 5px;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 26px;
+}
+
+.btn-editar:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para o modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: #252c38;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilo para o formulário */
+form div {
+  margin-bottom: 15px;
+  padding: 0 8px;
+}
+
+form label {
+  padding: 2px;
+  display: block;
+  margin: 0px;
+}
+
+form input,
+select {
+  color: #000000;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 10px;
+}
+
+.modal-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.price-stock {
+  padding: 0;
+}
+
+.dt-layout-row:first-child {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.dt-layout-row:last-child {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.dt-length {
+  display: flex;
+  align-items: baseline;
+}
+.dt-length select {
+  width: auto;
+  margin-right: 5px;
+}
+
+.dt-layout-row:first-child:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.edit-cell div {
+  display: flex;
+  justify-content: center;
+}
+
+.dt-search input {
+  border-radius: 8px;
+  margin-left: 4px;
+}
+
+div.container-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  justify-self: start;
+}
+div.container-title h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.dt-container {
+  min-width: 700px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+}
+.header-group span {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group input {
+  width: 20px;
+  margin-right: 25px;
+}
+
+.half-modal {
+  display: flex;
+}

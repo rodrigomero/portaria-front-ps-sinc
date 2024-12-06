@@ -8,7 +8,7 @@ export const UserContext = createContext({});
 export const UserProvider = ({ children }) => {
   const [userData, setUserData] = useState({});
   const [isNewModalOpen, setIsNewModalOpen] = useState(false);
-  const [isInspectionModalOpen, SetIsInspectionModalOpen] = useState(true);
+  const [isInspectionModalOpen, SetIsInspectionModalOpen] = useState(false);
   const [formData, setFormData] = useState({
     carId: 1,
     driverId: 1,

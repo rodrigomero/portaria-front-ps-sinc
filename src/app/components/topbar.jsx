@@ -14,8 +14,8 @@ export default function Topbar() {
   const isLogin = path === "/login" || path === "/register" || path === "/";
 
   const isDashboard = path === "/dashboard" ? "active" : "";
-  const isUsers = path === "/users" ? "active" : "";
-  const isOrders = path === "/orders" ? "active" : "";
+  const isCars = path === "/cars" ? "active" : "";
+  const isDrivers = path === "/drivers" ? "active" : "";
 
   useEffect(() => {
     const isAdminValue = localStorage.getItem("isAdmin");
@@ -38,13 +38,13 @@ export default function Topbar() {
         {isAdmin && (
           <>
             <li>
-              <Link href="/users" className={isUsers}>
-                Usuários
+              <Link href="/cars" className={isCars}>
+                Carros
               </Link>
             </li>
             <li>
-              <Link href="/orders" className={isOrders}>
-                Pedidos
+              <Link href="/drivers" className={isDrivers}>
+                Motoristas
               </Link>
             </li>
           </>
